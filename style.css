@@ -4,16 +4,21 @@ body {
     font-size: 15px;
 }
 
+.bg-top-desktop {display: none}
+.bg-bottom-desktop {display: none}
+
 .bg-top {
     position: absolute;
     width: 100%;
     top: 0;
+    z-index: -1;
 }
 
 .bg-bottom {
     position: absolute;
     bottom: 0;
     width: 100%;
+    z-index: -1;
 }
 
 /* Main */
@@ -37,6 +42,7 @@ h1 {
     color: hsl(303, 10%, 53%);
     line-height: 1.5rem;
     font-size: 1.2rem;
+    font-weight: 500;
 }
 
 /* Reviews Section */
@@ -56,6 +62,10 @@ h1 {
     padding: 0.8rem;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
+}
+
+.review img {
+    object-fit: contain;
 }
 
 /* Testimonials Section */
@@ -96,4 +106,112 @@ h1 {
     margin: 0;
     font-size: 1.1rem;
     line-height: 1.5rem;
+}
+
+/* Desktop Site*/
+@media screen and (min-width: 1024px) {
+    /* Background */
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bg-top {display: none}
+    .bg-bottom {display: none}
+
+    .bg-top-desktop {
+        display: initial;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .bg-bottom-desktop {
+        display: initial;
+        position: absolute;
+        height: 75vh;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    /* Main */
+    main {
+        display: flex;
+        flex-direction: column;
+        max-width: 1119px;
+    }
+
+    .main-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    
+    /* Intro Section */
+    .intro-section {
+        text-align: left;
+        max-width: 29rem;
+    }
+
+    h1 {
+        margin: 0;
+        max-width: 25rem;
+        font-size: 3.5rem;
+    }
+
+    /* Review Section */
+    .review-section {
+        margin: auto 0;
+    }
+
+    .review {
+        display: flex;
+        gap: 0.7rem;
+        align-items: center;
+        padding: 1.3rem;
+    }
+    
+    .stars {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.2rem;
+    }
+
+    #review-1 {
+        position: relative;
+        right: 5rem;
+    }
+
+    #review-2 {
+        position: relative;
+        right: 2.5rem;
+    }
+
+    .review-section p {
+        display: inline-block;
+        margin: 0.25rem 0 0 0;
+        font-size: 1.1rem;
+    }
+
+    /* Testimonial Section */
+    .testimonial-section {
+        display: flex;
+        gap: 1rem;
+    }
+
+    #testimony-2 {
+        position: relative;
+        top: 1.5rem;
+    }
+
+    #testimony-3 {
+        position: relative;
+        top: 3rem;
+    }
 }
