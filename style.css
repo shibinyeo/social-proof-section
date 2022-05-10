@@ -1,0 +1,99 @@
+/* Background */
+body {
+    margin: 0;
+    font-size: 15px;
+}
+
+.bg-top {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.bg-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Main */
+main {
+    padding: 1rem 1.4rem 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* Intro Section */
+.intro-section {
+    text-align: center;
+}
+
+h1 {
+    color: hsl(300, 43%, 22%);
+    margin: 2rem 2rem 0;
+    font-size: 2.5rem;
+}
+
+.intro-section p {
+    color: hsl(303, 10%, 53%);
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+/* Reviews Section */
+.review-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.review-section p {
+    margin: 0.6rem 0 0;
+    font-weight: bold;
+    color:hsl(300, 43%, 22%)
+}
+
+.review {
+    background-color: hsl(300, 24%, 96%);
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* Testimonials Section */
+.testimonial {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.profile {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    margin-bottom: 1.3rem;
+}
+
+.profile img {
+    height: 2.7rem;
+    border-radius: 99rem;
+}
+
+.profile p {
+    margin: 0.3rem;
+}
+
+.name {
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+}
+
+.status {
+    color: hsl(333, 80%, 67%);
+}
+
+.description {
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
